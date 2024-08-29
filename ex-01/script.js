@@ -31,6 +31,7 @@ const mediaSimples = (...numeros) => {
 
 console.log(`Média Aritmética simples: ${mediaSimples(1,3,5)}`)
 
+// Para um maior controle, aplicar um operador de coalescência nula abaixo em 'peso'
 const mediaPonderada = (...entradas) => {
     const soma = entradas.reduce((accum, {numero, peso}) => accum + numero * peso, 0)
     const somaPesos = entradas.reduce((accum, entradas) => accum + entradas.peso, 0)
