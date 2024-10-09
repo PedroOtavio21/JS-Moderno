@@ -1,6 +1,6 @@
 /** Módulos CommonJS
  * A partir desta aula, será utilizado o javascript a partir do node! 
- * (Para executar: Node './caminho_desejado')
+ * ----------------------- (Para executar: Node './caminho_desejado') -----------------------
  * 
  * Para criar um módulo CommonJs, primeiro você deve:
  * -    A partir do bloco de código desejado em outro arquivo, fazer um 'module.exports = nomeFuncao'
