@@ -24,8 +24,17 @@ data em um formato específico (format).
 */
 const dayjs = require('dayjs')
 
-const nextBirthday = (yearBorn) => {}
+const birthday = (date) => {
+    const birthday = dayjs(date)
+    const today = dayjs()
 
-const now = dayjs()
+    const ageInYears = today.diff(birthday, 'year')
+    const nextBirthday = birthday.add(ageInYears + 1, 'year')
+    const daysToNextBirthday = nextBirthday.diff(today, 'day') + 1
 
-console.log(now)
+    console.log(`Idade: ${ageInYears}`)
+    console.log(`Próximo aniversário: ${nextBirthday.format('DD/MM/YYYY')}`)
+    console.log(`Dias para completar ${ageInYears + 1} anos: ${daysToNextBirthday}`)
+}
+
+birthday('2002-08-06')
